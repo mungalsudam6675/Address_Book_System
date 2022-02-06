@@ -7,6 +7,7 @@ public class AddressBookMain {
 		AddressBook addressBook = new AddressBook();
 		addressBook.addContacts();
 		addressBook.listPeople();
+		addressBook.deletePerson();
 
 	}
 
