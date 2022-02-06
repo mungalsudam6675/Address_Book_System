@@ -58,4 +58,20 @@ public class AddressBook {
 		}
 
 	}
+
+	public void deletePerson() {
+		Scanner sc = new Scanner(System.in);
+         System.out.println("Enter the first name you want to remove.");
+         String firstName = sc.nextLine();
+         for(int i=0;i<people.size();i++) {
+        	 if(people.get(i).getFirstName().equals(firstName)) {
+        		 people.remove(people.get(i));
+        		 System.out.println("person removed sucessfully");
+        	 }
+        	 else {
+        		 System.out.println("person not found");
+        	 }
+        	 
+         	}	
+	}
 }
